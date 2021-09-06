@@ -7,8 +7,8 @@ import random
 # Question banks in form of [Question]: [Answer]
 Ch1 = {
     "What important concept was attributed to Ada Lovelace?": "The program loop",
-    "What important pastry helped move your job up in the queue in second generation software, and what third generation software development make that pastry unnecessary?", "Donuts and time-sharing",
-    "What features of transistors made them superior for computers, compared with vacuum tubes?": "They were cheaper, smaller, and cooler then tubes and lasted longer."
+    "What important pastry helped move your job up in the queue in second generation software, and what third generation software development make that pastry unnecessary?": "Donuts and time-sharing",
+    "What features of transistors made them superior for computers, compared with vacuum tubes?": "They were cheaper, smaller, and cooler then tubes and lasted longer.",
     "What logical elements did Charles Sanders Peirce realize electrical switches could emulate in 1880?": "Boolean algebra",
     "Who is the father of modern computers?": "Alan Turing",
     "What important concept is attributed to John von Neumann?": "The stored program concept",
@@ -27,14 +27,14 @@ Ch1 = {
     "in 1642 Pascal created a mechanical device with gears and levers. The device was capable of what kinds of calculation?": "Addition and subtraction"
 }
 
-# Add chapters here are you go
-allChap = ["Ch1"]
+# Add chapters here in form String: Dict
+allChap = {"Ch1": Ch1}
 
 def menuSelect():
     select = ''
-    while select != '0' or select != '1', or select != '2':
+    while select != '0' and select != '1' and select != '2':
         select = input()
-        if select != '0' or select != '1', or select != '2':
+        if select != '0' and select != '1' and select != '2':
             print('nope')
     print('cool')
     return select
@@ -44,20 +44,22 @@ def selectChapters():
     print("what chapter (in form 'Ch#')")
     go = True
     chaps = []
-    while go
-        while select not in allChap:
+    while go:
+        select = ""
+        while select not in allChap.keys():
             select = input().lower().capitalize()
             if select not in allChap:
                 print('nope')
         chaps.append(select)
         print('cool')
         print("uno mas? (y/n)")
-        while more != "y" or more != 'n':
+        more = ''
+        while more != "y" and more != 'n':
             more = input().lower()
-            if more != "y" or more != 'n':
+            if more != "y" and more != 'n':
                 print('nope')
         print("aight")
-        if more = 'n':
+        if more == 'n':
             go = False
 
     return chaps
@@ -66,22 +68,22 @@ def test(chaps):
     questionBank = {}
     print("Press enter to see answer/next question, q to quit")
     for chap in chaps:
-        questionBank = questionBank | chap
+        questionBank.update(allChap[chap])
     while 1:
-        q = random.choice(list(questionBank.values()))
-        print(f"\n{q}\n")
-        while select != 'q' or select != '':
+        q = random.choice(list(questionBank.keys()))
+        print(f"\n\n{q}")
+        select = ' '
+        while select != 'q' and select != '':
             select = input()
-        if select = 'q':
+        if select == 'q':
             print('adios')
-            break()
-        print(f"\n{questionBank[q]}")
-        while select != 'q' or select != '':
+            exit()
+        print(f"{questionBank[q]}")
+        while select != 'q' and select != '':
             select = input()
-        if select = 'q':
+        if select == 'q':
             print('adios')
-            break()
-
+            exit()
 
 
 def main():
@@ -92,11 +94,11 @@ def main():
     print("select something, i guess")
     print("0 quit\n1 test all\n2 select chapters")
     selection = menuSelect()
-    chaps = allChap
-    if selection = "0":
+    chaps = allChap.keys()
+    if selection == "0":
         print('adios')
-        break
-    if selection = "2":
+        exit()
+    if selection == "2":
         chaps = selectChapters()
     test(chaps)
     
