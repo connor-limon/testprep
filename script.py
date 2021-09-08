@@ -52,7 +52,34 @@ Ch3 = {
     "Which type of I/O processing is most efficient?": "Interrupt"
 }
 
-Ch3 = {
+Ch4 = {
+    "Bandwidth is the speed of a transmission, measured in bytes per second.": "False",
+    "Which OSI level is responsible for physical addressing, data error notification, ordered delivery of frames and flow control? {Presentaion, Network, Application, Data-link, Physical, Session, transport}": "Data-link",
+    "What does TDM stand for?": "Time-division multiplexing",
+    "Which networking hardware is used for connecting networks of different types?": "Gateway",
+    "Which networking hardware is used for allowing only specific network traffic through, based on destination address?": "Bridge",
+    "Which topology became popular due to the Internet and home networking?": "Star",
+    "Which OSI level is responsible for assigning addresses to messages and provides connectivity and path selection? {Presentaion, Network, Application, Data-link, Physical, Session, transport}": "Network",
+    "DSL is a combination of what two types of multiplexing? ": "FDM and TDM",
+    "Which type of guided medium is the least susceptible to attenuation and inductance?": "Fiber-optic cable",
+    "Which OSI level is responsible for guaranteed delivery of datagrams, fault detection, error recovery, and flow control? {Presentaion, Network, Application, Data-link, Physical, Session, transport}": "Transport",
+    "Which OSI level is responsible for establishing, maintaining, and terminating the communication session between applications? {Presentaion, Network, Application, Data-link, Physical, Session, transport}": "Session",
+    "Which of the following is NOT a LAN typology?": "Coaxial",
+    "What does FDM stand for?": "Frequency-division multiplexing",
+    "What is a circuit board that connects a network to the system bus and converts a computer's binary information into a format suitable for the transmission medium called?": "NIC",
+    "Which networking hardware is used for directing network traffic, based on its logical address?": "Router",
+    "Which networking hardware functions as a multiport signal amplifier?": "Hub",
+    "Which networking hardware is used for amplifying signals on long cables between nodes?": "Repeater",
+    "What is fiber-optic cable made out of?": "Glass",
+    "Which OSI level is responsible for formatting data and character format translation? {Presentaion, Network, Application, Data-link, Physical, Session, transport}": "Presentation",
+    "Which OSI level is responsible for giving applications access to the network? {Presentaion, Network, Application, Data-link, Physical, Session, transport}": "Application",
+    "Which OSI level is responsible for electrical, mechanical, procedural, and functional specifications? {Presentaion, Network, Application, Data-link, Physical, Session, transport}": "Physical",
+    "What factor reduces the strength of an electrical signal as it travels along a transmission medium?": "Attenuation",
+    "Modems convert binary digits into sounds by modulating tones.": "True",
+    "How does a WLAN differ from a LAN?": "It uses unguided media"
+}
+
+Ch5 = {
     "": "",
     "": "",
     "": "",
@@ -68,7 +95,7 @@ Ch3 = {
 }
 
 # Add chapters here in form String: Dict
-allChap = {"Ch1": Ch1}
+allChap = {"Ch1": Ch1, "Ch14": Ch14, "Ch2": Ch2, "Ch3": Ch3, "Ch4": Ch4}
 
 def menuSelect():
     select = ''
