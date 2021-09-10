@@ -1,0 +1,102 @@
+# heyo
+# don't be stupid
+# love you
+
+import random
+
+# Question banks in form of [Question]: [Answer]
+
+Ch5 = {
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": ""
+}
+
+# Add chapters here in form String: Dict
+allChap = {"Ch1": Ch1, "Ch14": Ch14, "Ch2": Ch2, "Ch3": Ch3, "Ch4": Ch4}
+
+def menuSelect():
+    select = ''
+    while select != '0' and select != '1' and select != '2':
+        select = input()
+        if select != '0' and select != '1' and select != '2':
+            print('nope')
+    print('cool')
+    return select
+
+# returns list with chaps
+def selectChapters():
+    print("what chapter (in form 'Ch#')")
+    go = True
+    chaps = []
+    while go:
+        select = ""
+        while select not in allChap.keys():
+            select = input().lower().capitalize()
+            if select not in allChap:
+                print('nope')
+        chaps.append(select)
+        print('cool')
+        print("uno mas? (y/n)")
+        more = ''
+        while more != "y" and more != 'n':
+            more = input().lower()
+            if more != "y" and more != 'n':
+                print('nope')
+        print("aight")
+        if more == 'n':
+            go = False
+
+    return chaps
+
+def test(chaps):
+    questionBank = {}
+    print("Press enter to see answer/next question, q to quit")
+    for chap in chaps:
+        questionBank.update(allChap[chap])
+    while 1:
+        q = random.choice(list(questionBank.keys()))
+        print(f"\n\n{q}")
+        select = ' '
+        while select != 'q' and select != '':
+            select = input()
+        if select == 'q':
+            print('adios')
+            exit()
+        print(f"{questionBank[q]}")
+        while select != 'q' and select != '':
+            select = input()
+        if select == 'q':
+            print('adios')
+            exit()
+
+
+def main():
+    print("Hello there.\nGeneral Kenobi!")
+    print("...")
+    print("Okay...")
+    print("umm")
+    print("select something, i guess")
+    print("0 quit\n1 test all\n2 select chapters")
+    selection = menuSelect()
+    chaps = allChap.keys()
+    if selection == "0":
+        print('adios')
+        exit()
+    if selection == "2":
+        chaps = selectChapters()
+    test(chaps)
+
+
+
+if __name__ == "__main__":
+	main()
