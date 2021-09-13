@@ -110,18 +110,15 @@ Ch6 = {
 }
 
 Ch7 = {
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": ""
+    "How many different number of states can be represented with 4 binary digits?": "16",
+    "What is the binary equivalent of the decimal number 114?": "0111 0010",
+    "What is the two's complement of the binary number 1001 0001?": "0110 1111",
+    "What is the hexadecimal equivalent of the decimal number 214?": "D6",
+    "What is the binary result of adding the binary numbers 0111 + 0011?": "1010",
+    "What is the decimal equivalent of the binary number 1010 1111?": "175",
+    "What is the hexadecimal equivalent of the binary number 1101 0101?": "D5",
+    "What is the binary result of subtracting the binary numbers 1001 - 0101?": "0100",
+    "What color is represented if all the pixel bits are set to 0?": "Black"
 }
 
 Ch8 = {
@@ -200,7 +197,7 @@ Ch12 = {
 }
 
 # Add chapters here in form String: Dict
-allChap = {"Ch1": Ch1, "Ch14": Ch14, "Ch2": Ch2, "Ch3": Ch3, "Ch4": Ch4, "Ch5": Ch5, "Ch6": Ch6}
+allChap = {"Ch1": Ch1, "Ch14": Ch14, "Ch2": Ch2, "Ch3": Ch3, "Ch4": Ch4, "Ch5": Ch5, "Ch6": Ch6, "Ch7": Ch7}
 
 def menuSelect():
     select = ''
