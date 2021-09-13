@@ -99,6 +99,92 @@ Ch5 = {
 }
 
 Ch6 = {
+    "What does Third Normal Form state?": "No nonkey columns depend on another non key column",
+    "By default, data returned by the SQL SELECT statement is in descending order.{ToF}": "",
+    "What uniquely identifies a row in a table?": "",
+    "What is the set of possible value for a column called?": "",
+    "What does First Normal Form state?": "",
+    "A database is divided into tables.": "",
+    "What does Second Normal Form state?": "",
+    "Organize the steps for making a database.": "Investigate and define, make a master column list, create the tables, work on relationships, analyze the desing, re-evaluate"
+}
+
+Ch7 = {
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": ""
+}
+
+Ch8 = {
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": ""
+}
+
+Ch9 = {
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": ""
+}
+
+Ch10 = {
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": ""
+}
+
+Ch11 = {
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": ""
+}
+
+Ch12 = {
     "": "",
     "": "",
     "": "",
@@ -114,7 +200,7 @@ Ch6 = {
 }
 
 # Add chapters here in form String: Dict
-allChap = {"Ch1": Ch1, "Ch14": Ch14, "Ch2": Ch2, "Ch3": Ch3, "Ch4": Ch4, "Ch5": Ch5}
+allChap = {"Ch1": Ch1, "Ch14": Ch14, "Ch2": Ch2, "Ch3": Ch3, "Ch4": Ch4, "Ch5": Ch5, "Ch6": Ch6}
 
 def menuSelect():
     select = ''
