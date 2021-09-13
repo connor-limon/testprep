@@ -80,6 +80,25 @@ Ch4 = {
 }
 
 Ch5 = {
+    "Which of the following protocols is responsible for sending email? {FTP, SMTP, DHCP, TCP/IP, HTTP}": "SMTP",
+    "Which network device is used to resolve domain names into IP addresses?": "DNS servers",
+    "What does NBP stand for?": "National Backbone Provider",
+    "Which of the following protocols maintains port information? {FTP, SMTP, DHCP, TCP/IP, HTTP}": "TCP/IP",
+    "Which of the following protocols is responsible for assigning IP addresses to services? {FTP, SMTP, DHCP, TCP/IP, HTTP}": "DHCP",
+    "What is the standard port number for HTTP?": "80",
+    "Which of the following protocols is responsible for sending and receiving data on the web? {FTP, SMTP, DHCP, TCP/IP, HTTP}": "HTTP",
+    "Which of the following protocols is responsible for reliable file transfer between computers? {FTP, SMTP, DHCP, TCP/IP, HTTP}": "FTP",
+    "The internet is a collection of LANS and WLANS.": "False",
+    "The Internet is owned by:": "No one",
+    "Why are we switching from IPv4 to IPv6?": "It has more addresses",
+    "Which of the following protocols managers sequencing data packets? {FTP, SMTP, DHCP, TCP/IP, HTTP}": "TCP/IP",
+    "What prevents TCP/IP packets from bouncing from router to router forever?": "TTL",
+    "Which of the following protocols is responsible for reliable delivery of data between computers? {FTP, SMTP, DHCP, TCP/IP, HTTP}": "TCP/IP",
+    "What is the language of the World Wide Web?": "HTML",
+    "What are switching centers maintained by Internet providers called?": "Point of presence"
+}
+
+Ch6 = {
     "": "",
     "": "",
     "": "",
@@ -95,7 +114,7 @@ Ch5 = {
 }
 
 # Add chapters here in form String: Dict
-allChap = {"Ch1": Ch1, "Ch14": Ch14, "Ch2": Ch2, "Ch3": Ch3, "Ch4": Ch4}
+allChap = {"Ch1": Ch1, "Ch14": Ch14, "Ch2": Ch2, "Ch3": Ch3, "Ch4": Ch4, "Ch5": Ch5}
 
 def menuSelect():
     select = ''
