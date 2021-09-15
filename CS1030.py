@@ -122,20 +122,20 @@ Ch7 = {
 }
 
 Ch8 = {
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": ""
+    "Which sorting algorithm is this: Grabs a set of values then uses insertion sort on the set. Grabs a larger set of data on each pass, until the list is sorted. {Selection, Bubble, Insertion, Quicksort, Merge, Shell}": "Shell Sort",
+    "What is the height of the binary tree? {7<4<2<1}": "3",
+    "How many comparisons does it take to get to 14? {7<11<13<14}": "7",
+    "An array with 5 elements has memory locations of 1 through 5.": "False",
+    "What does LIFO stand for?": "Last in First out",
+    "Which sorting algorithm is this: Compares every two elements and swaps as needed, then merges the lists of two into lists of four, etc... until the last two lists are merged into the final sorted list. {Selection, Bubble, Insertion, Quicksort, Merge, Shell}": "Merge",
+    "What does FIFO stand for? ": "First in First out",
+    "Which sorting algorithm is this: Works by taking elements from the list one by one and inserting them in their correct position into a new sorted list. {Selection, Bubble, Insertion, Quicksort, Merge, Shell}": "Insertion",
+    "A queue uses a FIFO structure.": "True",
+    "Which sorting algorithm is this: Finds the minimum value, swaps it with the value in the first position, and then repeats these steps for the remainder of the list. {Selection, Bubble, Insertion, Quicksort, Merge, Shell}": "Selection Sort",
+    "Which sorting algorithm is this: Compare the first two elements and swaps them if the first is greater than the second. It continues doing this for each pair of adjacent elements to the end of the data set, then starts again; it continues doing this until no swaps have occurred on the last pass. {Selection, Bubble, Insertion, Quicksort, Merge, Shell}": "Bubble Sort",
+    "Which sorting algorithm is this: All elements smaller than a chosen pivot are moves before it and all greater elements are moved after it. {Selection, Bubble, Insertion, Quicksort, Merge, Shell}": "Quicksort",
+    "A stack uses a LIFO structure.": "True"
 }
-
 Ch9 = {
     "": "",
     "": "",
@@ -197,7 +197,7 @@ Ch12 = {
 }
 
 # Add chapters here in form String: Dict
-allChap = {"Ch1": Ch1, "Ch14": Ch14, "Ch2": Ch2, "Ch3": Ch3, "Ch4": Ch4, "Ch5": Ch5, "Ch6": Ch6, "Ch7": Ch7}
+allChap = {"Ch1": Ch1, "Ch14": Ch14, "Ch2": Ch2, "Ch3": Ch3, "Ch4": Ch4, "Ch5": Ch5, "Ch6": Ch6, "Ch7": Ch7, "Ch8": Ch8}
 
 def menuSelect():
     select = ''
