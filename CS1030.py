@@ -156,52 +156,47 @@ Ch9 = {
 }
 
 Ch10 = {
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": ""
+    "What is reading data from or writing data to anywhere on a disk called?": "Random Access",
+    "You're tracking information on rocket launches. Each launch is assigned a number from 1,000 to 100,000. There will be around 5,000 launches, and you're using a hashing algorithm that divides the highest possible number of launched by the expected number of launches. What is the hash key, and what would the relative record of rocket launch number 80,000 be?": "Hash Key: 20; Relative record: 4000",
+    "Sectors are made up of clusters. ToF": "False",
+    "Which of the following is NOT one of the advantages of using NTFS? {Efficient disk use on small volumes, file encryption, security, journaling}": "Efficient disk use on small volumes",
+    "FAT32 provides the capability to assign rights to a file or directory. ToF": "False",
+    "Select all the responsibilities of a file system. {Creating files, renaming files, manipulating files, copying files}": "All",
+    "What is 'reading and writing data in order from the beginning' called?": "Sequencial Access",
+    "Which tool is used to reorganize clusters so as to minimize drive head movement?": "Disk defragmenter utility"
 }
 
 Ch11 = {
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": ""
+    "Personalization can help get positive emotional responses from users. ToF": "True",
+    "The user-centric design process starts with system needs, not the end user. ToF": "False",
+    "Prototyping is a key component of iterative design. ToF": "True",
+    "Poorly designed technology is often the cause of poor sales, poor usability, and user confusion. ToF": "True"
 }
 
 Ch12 = {
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": ""
+    "Iterative development can save you a lot of debugging time and gives you a baseline of debugging. ToF": "True",
+    "Which of the following is NOT one of the reasons for having more than one version of a program? {Testing, increased pay, experimentation, backup}": "Increased Pay",
+    "Who found the first computer bug?": "Grace Hopper"
+}
+
+Ch13 = {
+    "What does SDLC stand for?": "Software Development Life Cycle",
+    "A prototype is the first test of a final product, before it is shipped. ToF": "False",
+    "Scope creep is good for a project because it's one of the software development life cycles. ToF": "False",
+    "What was UML designed to do?": "Assist developers in creating visual models of the application's functionality",
+    "Select all the tasks of a software engineer. {Creating a design document, comminicating with clients in meetings, writing the application, designing screens}": "All",
+    "What is a design document used for?": "A blueprint that shows an application's functionality",
+    "Which of the following is not part of the SDLC? {Software implementation, project feasibility, software proposal to client, software design}": "Software proposal to client",
+    "A [] is a standard or typical example of how something might work, but without all the built-in functionality.": "prototype",
+    "A [] is a visual model for describing a program's logical steps.": "flowchart",
+    "If end users or testers find a bug in the application, you should find out why they insist on breaking the program and get them some training so that they stop making it crash. ToF": "False",
+    "The best way to write a good program is: have an initial meeting with the end user to find out the requirements for the project, go back to your office and write the program, then deliver the finished product for installation. ToF": "False",
+    "The tester's role is not as critical as other team roles and should be the first role eliminated if the project is behind the scheduled completion date. ToF": "False",
+    "What does UML stand for?": "Unified Modeling Language"
 }
 
 # Add chapters here in form String: Dict
-allChap = {"Ch1": Ch1, "Ch14": Ch14, "Ch2": Ch2, "Ch3": Ch3, "Ch4": Ch4, "Ch5": Ch5, "Ch6": Ch6, "Ch7": Ch7, "Ch8": Ch8}
+allChap = {"Ch1": Ch1, "Ch14": Ch14, "Ch2": Ch2, "Ch3": Ch3, "Ch4": Ch4, "Ch5": Ch5, "Ch6": Ch6, "Ch7": Ch7, "Ch8": Ch8, "Ch9": Ch9}
 
 def menuSelect():
     select = ''
