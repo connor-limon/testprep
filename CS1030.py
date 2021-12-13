@@ -255,7 +255,7 @@ def test(chaps):
 
 
 def main():
-    print("Hello there.\nGeneral Kenobi!")
+    print("Hello there")
     print("...")
     print("Okay...")
     print("umm")
